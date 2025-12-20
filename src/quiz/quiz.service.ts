@@ -7,6 +7,8 @@ import { DIMENSION_TO_CENTRES } from './constants/dimensions-mapping.constants';
 import { DIMENSION_TO_CLUBS } from './constants/dimensions-club.constants';
 import { getUniqueLimited } from './utils/recommendations.utils';
 import { Persona, PERSONA_MAP } from './constants/persona.constaants';
+import { FinanceLevel } from 'src/common/enum/finance.enum';
+import { FINANCE_TIPS } from './constants/finance-tips.constants';
 
 @Injectable()
 export class QuizService {
@@ -81,5 +83,10 @@ export class QuizService {
       ),
       learningStyle: primaryPersona.learningStyle,
     };
+  }
+
+  generateFinanceAdvice(financeLevel?: FinanceLevel) {
+    if (!financeLevel) return null;
+    return FINANCE_TIPS[financeLevel];
   }
 }

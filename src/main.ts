@@ -8,11 +8,6 @@ async function bootstrap() {
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
   });
-  app.enableCors({
-    origin: 'https://pongalpath.vercel.app',
-    methods: 'GET,POST,PUT,DELETE',
-    credentials: true,
-  });
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

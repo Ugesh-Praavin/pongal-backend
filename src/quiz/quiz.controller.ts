@@ -12,11 +12,15 @@ export class QuizController {
     const topDimensions = this.service.getTopDimensions(scores);
     const recommendations = this.service.generateRecommendations(topDimensions);
     const persona = this.service.generatePersona(topDimensions);
+    const finance = this.service.generateFinanceAdvice(
+      dto.student.financeLevel,
+    );
 
     return {
+      student: dto.student,
       persona,
-      topDimensions,
       recommendations,
+      finance,
     };
   }
 }

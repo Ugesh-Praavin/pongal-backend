@@ -9,9 +9,10 @@ export interface Persona {
 
 export const PERSONA_MAP: Record<Dimension, Persona> = {
   TECH: {
-    title: 'The System Builder',
+    title: 'System Builder',
     description:
-      'You love building reliable systems, writing logic, and making things work end-to-end.',
+      'You enjoy building things that work reliably, solving problems with logic, and making systems run smoothly.',
+
     strengths: [
       'Problem solving',
       'Logical thinking',
@@ -22,9 +23,10 @@ export const PERSONA_MAP: Record<Dimension, Persona> = {
   },
 
   DATA: {
-    title: 'The Insight Seeker',
+    title: 'Insight Seeker',
     description:
-      'You enjoy analyzing patterns, numbers, and extracting meaning from chaos.',
+      'You love finding patterns in data, understanding why things happen, and turning information into clarity.',
+
     strengths: [
       'Analytical thinking',
       'Pattern recognition',
@@ -34,71 +36,81 @@ export const PERSONA_MAP: Record<Dimension, Persona> = {
   },
 
   DESIGN: {
-    title: 'The Experience Creator',
+    title: 'Experience Creator',
     description:
-      'You focus on aesthetics, emotions, and how people experience products.',
+      'You care about how things look, feel, and connect emotionally with people.',
+
     strengths: ['Creativity', 'Visual thinking', 'User empathy'],
     learningStyle: 'Learning by creating and iterating visuals',
   },
 
   CORE: {
-    title: 'The Practical Engineer',
+    title: 'Practical Engineer',
     description:
-      'You understand how physical systems work and enjoy hands-on problem solving.',
+      'You like understanding how things work in the real world and solving hands-on problems.',
     strengths: ['Mechanical reasoning', 'Real-world application'],
     learningStyle: 'Learning by building and testing physically',
   },
 
   MGMT: {
-    title: 'The Team Driver',
+    title: 'Team Driver',
     description:
-      'You naturally take charge, coordinate people, and move ideas forward.',
+      'You naturally lead, coordinate people, and keep teams moving toward the goal.',
+
     strengths: ['Leadership', 'Communication', 'Decision making'],
     learningStyle: 'Learning through collaboration and execution',
   },
 
   BIZ: {
-    title: 'The Strategic Thinker',
+    title: 'Strategic Thinker',
     description:
-      'You think about growth, strategy, and how ideas turn into impact.',
+      'You think ahead, spot opportunities, and enjoy turning ideas into impact.',
+
     strengths: ['Strategic thinking', 'Negotiation', 'Vision'],
     learningStyle: 'Learning through case studies and real-world problems',
   },
 
   SOCIAL: {
-    title: 'The Community Anchor',
-    description: 'You care about people, inclusion, and collective progress.',
+    title: 'Community Anchor',
+    description:
+      'You care about people, teamwork, and creating positive change around you.',
+
     strengths: ['Empathy', 'Teamwork', 'Social awareness'],
     learningStyle: 'Learning through interaction and service',
   },
 
   LANG: {
-    title: 'The Cultural Communicator',
+    title: 'Cultural Communicator',
     description:
-      'You express ideas beautifully through language, culture, and storytelling.',
+      'You express ideas clearly through language, culture, and storytelling.',
+
     strengths: ['Communication', 'Storytelling', 'Cultural awareness'],
     learningStyle: 'Learning through discussion and expression',
   },
 
   CYBER: {
-    title: 'The Digital Defender',
+    title: 'Digital Defender',
     description:
-      'You enjoy securing systems and thinking one step ahead of threats.',
+      'You enjoy protecting systems, thinking ahead of risks, and keeping things secure.',
+
     strengths: ['Security mindset', 'Risk analysis'],
     learningStyle: 'Learning through simulations and challenges',
   },
 
   IOT: {
-    title: 'The Smart Builder',
+    title: 'Smart Builder',
     description:
-      'You enjoy connecting hardware and software to build intelligent systems.',
+      'You enjoy combining hardware and software to create intelligent solutions.',
+
     strengths: ['Hardware-software integration', 'Automation'],
     learningStyle: 'Learning by prototyping',
   },
 
   WORKAHOLIC: {
-    title: 'The Research Mind',
-    description: 'You are deeply focused and driven to master complex topics.',
+    title: 'Deep Focused Mind',
+    description:
+      'You are highly focused, disciplined, and driven to master complex subjects.',
+
     strengths: ['Focus', 'Persistence'],
     learningStyle: 'Learning through deep study',
   },
