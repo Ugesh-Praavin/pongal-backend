@@ -73,3 +73,5 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 .qoder/rules/byterover-rules.md
 .augment/rules/byterover-rules.md
 /generated/prisma
+
+/generated/prisma
