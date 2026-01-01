@@ -9,11 +9,11 @@ async function bootstrap() {
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
   });
-  app.enableCors({
-    origin: 'http://localhost:5173', // Vite default
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-    credentials: true,
-  });
+  // app.enableCors({
+  //   origin: 'http://localhost:5173', // Vite default
+  //   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+  //   credentials: true,
+  // });
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
