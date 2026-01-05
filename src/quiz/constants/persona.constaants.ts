@@ -9,109 +9,79 @@ export interface Persona {
 
 export const PERSONA_MAP: Record<Dimension, Persona> = {
   TECH: {
-    title: 'System Builder',
-    description:
-      'You enjoy building things that work reliably, solving problems with logic, and making systems run smoothly.',
-
-    strengths: [
-      'Problem solving',
-      'Logical thinking',
-      'Debugging',
-      'System design',
-    ],
-    learningStyle: 'Hands-on coding and experimentation',
+    title: 'Cool Engineer',
+    description: 'Builds clean systems and fixes what others can’t.',
+    strengths: ['Problem solving', 'Logic', 'Debugging'],
+    learningStyle: 'Hands-on building',
   },
 
   DATA: {
-    title: 'Insight Seeker',
-    description:
-      'You love finding patterns in data, understanding why things happen, and turning information into clarity.',
-
-    strengths: [
-      'Analytical thinking',
-      'Pattern recognition',
-      'Research mindset',
-    ],
-    learningStyle: 'Learning through analysis and observation',
+    title: 'Data Detective',
+    description: 'Finds hidden patterns and turns numbers into answers.',
+    strengths: ['Analysis', 'Pattern spotting'],
+    learningStyle: 'Learning through data',
   },
 
   DESIGN: {
-    title: 'Experience Creator',
-    description:
-      'You care about how things look, feel, and connect emotionally with people.',
-
-    strengths: ['Creativity', 'Visual thinking', 'User empathy'],
-    learningStyle: 'Learning by creating and iterating visuals',
+    title: 'Visual Thinker',
+    description: 'Designs experiences that feel simple and human.',
+    strengths: ['Creativity', 'UX thinking'],
+    learningStyle: 'Creating & iterating',
   },
 
   CORE: {
-    title: 'Practical Engineer',
-    description:
-      'You like understanding how things work in the real world and solving hands-on problems.',
-    strengths: ['Mechanical reasoning', 'Real-world application'],
-    learningStyle: 'Learning by building and testing physically',
+    title: 'Hands-on Engineer',
+    description: 'Learns by building, testing, and fixing things.',
+    strengths: ['Practical skills', 'Real-world thinking'],
+    learningStyle: 'Learning by doing',
   },
 
   MGMT: {
-    title: 'Team Driver',
-    description:
-      'You naturally lead, coordinate people, and keep teams moving toward the goal.',
-
-    strengths: ['Leadership', 'Communication', 'Decision making'],
-    learningStyle: 'Learning through collaboration and execution',
+    title: 'Team Leader',
+    description: 'Keeps people aligned and projects moving.',
+    strengths: ['Leadership', 'Decision making'],
+    learningStyle: 'Collaboration',
   },
 
   BIZ: {
-    title: 'Strategic Thinker',
-    description:
-      'You think ahead, spot opportunities, and enjoy turning ideas into impact.',
-
-    strengths: ['Strategic thinking', 'Negotiation', 'Vision'],
-    learningStyle: 'Learning through case studies and real-world problems',
+    title: 'Growth Strategist',
+    description: 'Spots opportunities and turns ideas into impact.',
+    strengths: ['Vision', 'Strategy'],
+    learningStyle: 'Real-world cases',
   },
 
   SOCIAL: {
-    title: 'Community Anchor',
-    description:
-      'You care about people, teamwork, and creating positive change around you.',
-
-    strengths: ['Empathy', 'Teamwork', 'Social awareness'],
-    learningStyle: 'Learning through interaction and service',
+    title: 'People Builder',
+    description: 'Creates positive impact through teamwork.',
+    strengths: ['Empathy', 'Collaboration'],
+    learningStyle: 'Learning with people',
   },
 
   LANG: {
-    title: 'Cultural Communicator',
-    description:
-      'You express ideas clearly through language, culture, and storytelling.',
-
-    strengths: ['Communication', 'Storytelling', 'Cultural awareness'],
-    learningStyle: 'Learning through discussion and expression',
+    title: 'Story Crafter',
+    description: 'Expresses ideas clearly through words.',
+    strengths: ['Communication', 'Storytelling'],
+    learningStyle: 'Discussion & expression',
   },
 
   CYBER: {
-    title: 'Digital Defender',
-    description:
-      'You enjoy protecting systems, thinking ahead of risks, and keeping things secure.',
-
-    strengths: ['Security mindset', 'Risk analysis'],
-    learningStyle: 'Learning through simulations and challenges',
+    title: 'Cyber Guardian',
+    description: 'Thinks ahead to keep systems safe.',
+    strengths: ['Security mindset', 'Risk thinking'],
+    learningStyle: 'Challenges & simulations',
   },
 
   IOT: {
-    title: 'Smart Builder',
-    description:
-      'You enjoy combining hardware and software to create intelligent solutions.',
-
-    strengths: ['Hardware-software integration', 'Automation'],
-    learningStyle: 'Learning by prototyping',
+    title: 'Tech Tinkerer',
+    description: 'Builds smart things using hardware and code.',
+    strengths: ['Prototyping', 'Automation'],
+    learningStyle: 'Hands-on prototyping',
   },
 
   WORKAHOLIC: {
-    title: 'Deep Focused Mind',
-    description:
-      'You are highly focused, disciplined, and driven to master complex subjects.',
-
-    strengths: ['Focus', 'Persistence'],
-    learningStyle: 'Learning through deep study',
+    title: 'Deep Thinker',
+    description: 'Stays focused and masters tough problems.',
+    strengths: ['Focus', 'Consistency'],
+    learningStyle: 'Deep study',
   },
 };
