@@ -13,5 +13,6 @@ import { ThrottlerGuard } from '@nestjs/throttler';
     },
   ],
   controllers: [SheetsController],
+  exports: [SheetsService],
 })
 export class SheetsModule {}

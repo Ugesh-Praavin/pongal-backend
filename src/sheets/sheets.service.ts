@@ -9,13 +9,7 @@ import { AddStudentDto } from './students.dto';
 @Injectable()
 export class SheetsService {
   private sheets: sheets_v4.Sheets;
-  private buffer: {
-    name: string;
-    registerNo: string;
-    department: string;
-    section: string;
-    year: string;
-  }[] = [];
+  private buffer: AddStudentDto[] = [];
 
   private flushing = false;
   private readonly BATCH_SIZE = 10;
@@ -74,12 +68,15 @@ export class SheetsService {
       d.department,
       d.section,
       d.year,
+
+      JSON.stringify(d.persona),
+      JSON.stringify(d.recommendations),
     ]);
 
     try {
       await this.sheets.spreadsheets.values.append({
         spreadsheetId: this.configService.get<string>('SHEET_ID'),
-        range: 'Sheet1!A:E',
+        range: 'Sheet1!A:G',
         valueInputOption: 'RAW',
         requestBody: { values },
       });

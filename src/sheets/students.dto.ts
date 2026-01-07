@@ -1,21 +1,20 @@
-// add-student.dto.ts
-import { IsString, IsNotEmpty } from 'class-validator';
-
 export class AddStudentDto {
-  @IsString()
-  @IsNotEmpty()
   name: string;
-
-  @IsString()
-  @IsNotEmpty()
   registerNo: string;
-
-  @IsString()
   department: string;
-
-  @IsString()
   section: string;
-
-  @IsString()
   year: string;
+
+  persona: {
+    title: string;
+    description: string;
+    strengths: string[];
+    learningStyle: string;
+  };
+
+  recommendations: {
+    centres: string[];
+    clubs: string[];
+    financeAdvice?: string[];
+  };
 }
