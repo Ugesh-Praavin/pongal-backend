@@ -9,6 +9,7 @@ import { getUniqueLimited } from './utils/recommendations.utils';
 import { Persona, PERSONA_MAP } from './constants/persona.constaants';
 import { FinanceLevel } from 'src/common/enum/finance.enum';
 import { FINANCE_TIPS } from './constants/finance-tips.constants';
+import { DIMENSION_TO_LANGUAGE } from './constants/language-love.constants';
 
 @Injectable()
 export class QuizService {
@@ -42,6 +43,17 @@ export class QuizService {
         dimension,
         score,
       }));
+  }
+  generateLanguageLove(topDimensions: { dimension: string; score: number }[]) {
+    const primary = topDimensions[0]?.dimension as Dimension;
+
+    return (
+      DIMENSION_TO_LANGUAGE[primary] || {
+        language: 'Python',
+        tagline: 'Fall in love with Python 🐍',
+        reason: 'A great language to start and grow with',
+      }
+    );
   }
 
   generateRecommendations(

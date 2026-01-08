@@ -20,6 +20,7 @@ export class QuizController {
     const recommendations = this.service.generateRecommendations(topDimensions);
 
     const persona = this.service.generatePersona(topDimensions);
+    const languageLove = this.service.generateLanguageLove(topDimensions);
 
     const finance = this.service.generateFinanceAdvice(
       dto.student.financeLevel,
@@ -38,6 +39,7 @@ export class QuizController {
         ...recommendations,
         financeAdvice: finance,
       },
+      languageLove,
     });
 
     // 4️⃣ respond immediately
@@ -46,6 +48,7 @@ export class QuizController {
       persona,
       recommendations,
       finance,
+      languageLove,
     };
   }
 }

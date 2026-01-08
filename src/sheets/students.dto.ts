@@ -17,4 +17,10 @@ export class AddStudentDto {
     clubs: string[];
     financeAdvice?: string[];
   };
+
+  languageLove: {
+    language: string;
+    tagline: string;
+    reason: string;
+  };
 }

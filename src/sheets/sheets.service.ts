@@ -68,6 +68,9 @@ export class SheetsService {
       d.department,
       d.section,
       d.year,
+      d.languageLove?.language ?? '',
+      d.languageLove?.tagline ?? '',
+      d.languageLove?.reason ?? '',
 
       JSON.stringify(d.persona),
       JSON.stringify(d.recommendations),
