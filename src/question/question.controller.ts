@@ -7,6 +7,6 @@ export class QuestionController {
 
   @Get('start')
   startQuiz(): any {
-    return this.questionService.getRandomQuestions(15);
+    return this.questionService.getRandomQuestions(5);
   }
 }
